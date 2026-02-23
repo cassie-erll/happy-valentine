@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For Hsu Yi Shoon Lae ❤️ | Baby Pwa Ceet </title>
+    <meta name="description" content="A special Valentine's Day surprise for Hsu Yi Shoon Lae (Baby Pwa Ceet). A romantic interactive experience asking: Will you be my Valentine?">
+    <meta name="keywords" content="Hsu Yi Shoon Lae, Baby Pwa Ceet, Valentine's Day, Valentine's Day Myanmar, Romantic Gift, Valentine's Surprise, Love, Myanmar">
+    <meta name="author" content="Baby Pwa Ceet's Love">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="For Baby Pwa Ceet ❤️ - Hsu Yi Shoon Lae">
+    <meta property="og:description" content="A special Valentine's Day surprise for Hsu Yi Shoon Lae. Will you be my Valentine?">
+    <meta property="og:image" content="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/paing's.gif">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="For Baby Pwa Ceet ❤️ - Hsu Yi Shoon Lae">
+    <meta property="twitter:description" content="A special Valentine's Day surprise for Hsu Yi Shoon Lae. Will you be my Valentine?">
+    <meta property="twitter:image" content="https://media1.tenor.com/m/m6Rz-F40848AAAAC/mochi-cat.gif">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&family=Playfair+Display:ital,wght@0,600;1,600&family=Great+Vibes&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+    <link rel="icon" type="image/png" sizes="16x16"
+            href="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/love.png">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/love.png">
+        <link rel="icon" type="image/png" sizes="48x48"
+            href="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/love.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/love.png">
+        <link rel="canonical" href="https://flashchinchilla.github.io/forHsu/">
+
+    <style>
+        :root {
+            --primary: #e63946;
+            --primary-light: #ffccd5;
+            --accent: #ff4d6d;
+            --text-dark: #2b2d42;
+            --text-light: #590d22;
+            --bg-gradient: linear-gradient(135deg, #fff0f3 0%, #fff5f7 100%);
+            --glass: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --shadow: 0 8px 32px 0 rgba(255, 77, 109, 0.15);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        
+        body {
+            font-family: 'Padauk', 'Outfit', sans-serif;
+            background: var(--bg-gradient);
+            color: var(--text-dark);
+            min-height: 100vh;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+
+        .lang-switch {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Outfit', sans-serif;
+            border: 2px solid var(--primary-light);
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+        .lang-switch:hover { transform: scale(1.05); }
+
+        .lang-en { display: none; }
+        .lang-my { display: none; }
+
+        .blob {
+            position: fixed;
+            background: linear-gradient(180deg, #ffc8dd 0%, #ffafcc 100%);
+            border-radius: 50%;
+            filter: blur(80px);
+            z-index: -1;
+            opacity: 0.6;
+            animation: float 20s infinite alternate;
+        }
+        .blob-1 { top: -10%; left: -10%; width: 50vw; height: 50vw; }
+        .blob-2 { bottom: -10%; right: -10%; width: 60vw; height: 60vw; animation-delay: -5s; background: linear-gradient(180deg, #cdb4db 0%, #bde0fe 100%); }
+
+        @keyframes float {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(30px, 50px) scale(1.1); }
+        }
+
+        h1, h2, h3 { color: var(--text-light); line-height: 1.3; }
+        h1 { font-family: 'Great Vibes', 'Padauk', cursive; font-size: 3rem; font-weight: 700; }
+        h2 { font-family: 'Padauk', serif; font-size: 1.8rem; margin-bottom: 1rem; font-weight: 700; }
+        p { line-height: 1.8; opacity: 0.9; margin-bottom: 1rem; font-family: 'Padauk', sans-serif; }
+
+        .btn {
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            border: none;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+            box-shadow: 0 4px 15px rgba(230, 57, 70, 0.3);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            white-space: normal; 
+            font-family: 'Padauk', sans-serif;
+            max-width: 85vw;
+            text-align: center;
+            line-height: 1.4;
+            word-wrap: break-word;
+        }
+        .btn:active { transform: scale(0.95); }
+        .btn-secondary { background: #e9ecef; color: #495057; box-shadow: none; }
+
+        .card {
+            background: var(--glass);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: var(--shadow);
+            margin-bottom: 24px;
+        }
+
+        #screen-intro {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background: radial-gradient(circle at center, #ffffff 0%, #fff0f3 100%);
+            overflow: hidden;
+        }
+        
+        .intro-content {
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .gif-area img {
+            width: 160px;
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(255, 77, 109, 0.2);
+        }
+
+        .pointing-cat {
+            position: absolute;
+            width: 80px;
+            bottom: -60px; 
+            left: 5%;
+            transform: rotate(-20deg);
+            z-index: 10;
+            animation: bounce 1s infinite alternate;
+            pointer-events: none; 
+        }
+
+        @keyframes bounce {
+            from { transform: translateY(0) rotate(-20deg); }
+            to { transform: translateY(-10px) rotate(-20deg); }
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+            min-height: 60px; 
+            position: relative; 
+            width: 100%;
+        }
+
+        #screen-main {
+            display: none;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero { text-align: center; margin: 40px 0; }
+        
+        .timeline { position: relative; padding-left: 20px; border-left: 2px solid var(--primary-light); margin: 30px 0; }
+        .timeline-item { position: relative; margin-bottom: 30px; padding-left: 20px; }
+        .timeline-item::before {
+            content: '❤️'; position: absolute; left: -29px; top: 0; background: white; padding: 5px; border-radius: 50%; border: 2px solid var(--primary-light); font-size: 12px;
+        }
+        .timeline-date { font-size: 0.85rem; color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+
+        /* FIXED GAME GRID STYLES */
+        .game-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            margin-top: 20px;
+            perspective: 1000px;
+        }
+        .game-card {
+            aspect-ratio: 1;
+            /* background: white; Removed to fix visibility during flip */
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            position: relative;
+            /* overflow: hidden; REMOVED to fix 3D rendering issue */
+        }
+        .game-card.flipped { transform: rotateY(180deg); }
+        
+        .card-back, .card-front {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden; /* Essential for Safari */
+            backface-visibility: hidden;
+            border-radius: 12px;
+            top: 0; 
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-back {
+            background: white;
+            color: var(--primary-light);
+            font-size: 2rem;
+            transform: rotateY(0deg);
+            z-index: 2;
+        }
+        
+        .card-front {
+            background: white;
+            transform: rotateY(180deg);
+            /* z-index: 1; */
+        }
+        
+        .card-front img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+            display: block;
+        }
+        /* END FIXED GAME GRID STYLES */
+
+
+        .masonry { 
+            columns: 2; 
+            column-gap: 12px; 
+        }
+        .masonry img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 12px;
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+        .masonry img:hover { transform: scale(1.02); }
+
+        /* Bucket List Section Styles */
+        .bucket-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .bucket-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255, 255, 255, 0.6);
+            padding: 12px;
+            border-radius: 12px;
+            border: 1px dashed var(--primary-light);
+        }
+        .bucket-check {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            color: var(--primary);
+            font-size: 12px;
+        }
+
+        /* Modal / Popup Styles */
+        #quizModal, #congratsModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.85);
+            backdrop-filter: blur(8px);
+            z-index: 99999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .quiz-content, .congrats-content {
+            background: white;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 24px;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+            border: 4px solid var(--primary-light);
+            animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        @keyframes popIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .quiz-step { display: none; }
+        .quiz-step.active { display: block; animation: fadeIn 0.5s ease; }
+        
+        .quiz-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            margin: 15px 0;
+            font-size: 1.1rem;
+            text-align: center;
+            font-family: 'Padauk', sans-serif;
+            outline: none;
+            transition: all 0.3s;
+        }
+        .quiz-input:focus { border-color: var(--primary); }
+
+        .rating-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+            margin: 20px 0;
+        }
+        
+        .rate-btn {
+            background: #fff;
+            border: 2px solid var(--primary-light);
+            border-radius: 8px;
+            padding: 10px 0;
+            font-weight: bold;
+            color: var(--primary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        .rate-btn:active { transform: scale(0.9); background: var(--primary-light); }
+
+        .punishment-overlay {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px;
+            z-index: 10;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .punishment-overlay img { width: 120px; margin-bottom: 15px; }
+
+        /* ANIMATIONS FOR ANSWERS */
+        @keyframes shake-anim {
+            0%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+            20%, 40%, 60%, 80% { transform: translateX(10px); }
+        }
+        .shake {
+            animation: shake-anim 0.5s cubic-bezier(.36,.07,.19,.97) both;
+            border-color: #ef233c !important;
+            box-shadow: 0 0 10px rgba(239, 35, 60, 0.5);
+        }
+
+        @keyframes success-anim {
+            0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(42, 157, 143, 0.7); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(42, 157, 143, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(42, 157, 143, 0); }
+        }
+        .success-pulse {
+            animation: success-anim 0.6s ease-out;
+            border-color: #2a9d8f !important;
+            color: #2a9d8f !important;
+        }
+
+        /* Heart Rain Animation Styles */
+        .falling-heart {
+            position: fixed;
+            top: -10vh;
+            font-size: 1.5rem;
+            animation: fall linear forwards;
+            z-index: 100000;
+            pointer-events: none;
+        }
+        @keyframes fall {
+            to { transform: translateY(110vh) rotate(360deg); }
+        }
+
+        /* Mobile Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            h2 { font-size: 1.5rem; }
+            p { font-size: 1rem; }
+            #screen-intro { padding: 15px; }
+            .intro-content { width: 100%; }
+            .gif-area img { width: 140px; }
+            
+            .buttons-container { 
+                flex-direction: column; 
+                gap: 12px; 
+                width: 100%; 
+                max-width: 300px; 
+            }
+            .btn { 
+                width: 100%; 
+                font-size: 1rem; 
+                padding: 12px 20px; 
+            }
+            
+            .pointing-cat { width: 60px; left: 0px; bottom: 50%; transform: translateY(50%) rotate(-15deg); }
+            
+            .hero { margin: 20px 0; }
+            .card { padding: 15px; border-radius: 16px; }
+            .masonry { columns: 2 !important; column-gap: 8px; }
+            .masonry img { margin-bottom: 8px; border-radius: 8px; }
+            .game-grid { gap: 6px; }
+            .game-card { border-radius: 8px; }
+            
+            .quiz-content { padding: 20px; width: 90vw; }
+            .quiz-input { padding: 12px; font-size: 1rem; }
+        }
+
+        @media (max-width: 360px) {
+            h1 { font-size: 1.8rem; }
+            .pointing-cat { display: none; }
+        }
+
+        /* Watch / Ultra Small Screen Support */
+        @media (max-width: 300px) {
+            body { font-size: 14px; }
+            h1 { font-size: 1.5rem !important; margin-bottom: 5px; }
+            h2 { font-size: 1.2rem; }
+            p { font-size: 0.9rem; margin-bottom: 0.5rem; }
+            
+            .lang-switch {
+                top: 5px; right: 5px;
+                padding: 4px 8px;
+                font-size: 0.7rem;
+            }
+            
+            .gif-area img { width: 100px; margin-bottom: 10px; }
+            
+            .btn {
+                padding: 8px 12px;
+                font-size: 0.9rem;
+                border-radius: 8px;
+                width: 100%;
+                min-width: unset;
+            }
+            
+            #screen-intro { padding: 10px; }
+            .card { padding: 12px; border-radius: 12px; margin-bottom: 15px; }
+            
+            .masonry { columns: 1 !important; }
+            .game-grid { grid-template-columns: repeat(3, 1fr); gap: 4px; }
+            .rating-grid { gap: 4px; }
+            .rate-btn { padding: 6px 0; font-size: 0.9rem; }
+            
+            .quiz-content, .congrats-content { padding: 15px; }
+            .quiz-input { padding: 8px; font-size: 0.9rem; margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="lang-switch" onclick="toggleLanguage()">
+        <span class="lang-en">🇺🇸 English</span>
+        <span class="lang-my">🇲🇲 မြန်မာ</span>
+    </button>
+
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <section id="screen-intro">
+        <div class="intro-content">
+            <div class="gif-area">
+                <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/paing's.gif" alt="Cute Gif">
+            </div>
+            
+            <h1 style="margin-bottom: 10px;">
+                <span class="lang-en">Hello, Baby Pwa Ceet!!</span>
+                <span class="lang-my">မင်္ဂလာပါ Baby Pwa Ceet လေးရေ!!</span>
+            </h1>
+            <p style="margin-bottom: 20px; font-weight: bold; padding: 0 10px;">
+                <span class="lang-en">Will you be my Valentine?</span>
+                <span class="lang-my">ကိုယ့်ရဲ့ Valentine ဖြစ်ခွင့်ပေးမလားဟင်?</span>
+            </p>
+            
+            <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/paing's.gif" class="pointing-cat" alt="Pointing Cat" style="opacity: 0; animation: fadeIn 2s forwards; animation-delay: 1s;">
+
+            <div class="buttons-container">
+                <button id="yesBtn" class="btn" onclick="acceptLove()">
+                    <span class="lang-en">YES! Absolutely 💖</span>
+                    <span class="lang-my">Yes! လက်ခံတယ် 💖</span>
+                </button>
+                <button id="noBtn" class="btn btn-secondary" onmouseover="rejectLove()" onclick="rejectLove()">
+                    <span class="lang-en">No</span>
+                    <span class="lang-my">ဟင့်အင်း</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <main id="screen-main">
+        
+        <div class="hero">
+            <h1>Happy Valentine's Day</h1>
+            <p>
+                <span class="lang-en">To my beautiful Hsu Yi Shoon Lae</span>
+                <span class="lang-my">ကိုယ့်ရဲ့ အလှဆုံးလေး Hsu Yi Shoon Lae အတွက်</span>
+            </p>
+            <div style="font-size: 3rem; margin: 20px 0;">💑</div>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="calendar-heart"></i> 
+                <span class="lang-en">Our Story</span>
+                <span class="lang-my">တို့နှစ်ယောက်ရဲ့ ပုံပြင်လေး</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="lang-en">The Beginning</span>
+                        <span class="lang-my">စတွေ့ခဲ့တဲ့နေ့</span>
+                    </div>
+                    <p>
+                        <span class="lang-en">The day we first met and my life changed forever.</span>
+                        <span class="lang-my">စတွေ့တဲ့နေ့မှာတင် ကိုယ့်ဘဝကြီးက ပြောင်းလဲသွားခဲ့တာပါ။</span>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="lang-en">Today</span>
+                        <span class="lang-my">ဒီနေ့</span>
+                    </div>
+                    <p>
+                        <span class="lang-en">Celebrating us on this special day.</span>
+                        <span class="lang-my">ဒီနေ့လေးမှာ တို့နှစ်ယောက် အတူတူရှိနေမယ်နော်။</span>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="lang-en">Forever</span>
+                        <span class="lang-my">ထာဝရ</span>
+                    </div>
+                    <p>
+                        <span class="lang-en">Many more memories to create together.</span>
+                        <span class="lang-my">ရှေ့ဆက်ပြီး အမှတ်တရတွေ အများကြီး အတူတူဖန်တီးကြမယ်။</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="image"></i> 
+                <span class="lang-en">Us Together</span>
+                <span class="lang-my">အမှတ်တရပုံရိပ်များ</span>
+            </h2>
+            <div class="masonry">
+                <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/section1.jpg" alt="Photo">
+                <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/section2.jpg" alt="Photo">
+                <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/section3.jpg" alt="Photo">
+                <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/section4.jpg" alt="Photo">
+                <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/section5.jpg" alt="Photo">
+                <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/section6.jpg" alt="Photo">
+            </div>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="gamepad-2"></i> 
+                <span class="lang-en">Play for a Kiss</span>
+                <span class="lang-my">အနမ်းလေးရဖို့ ကစားမယ်</span>
+            </h2>
+            <p>
+                <span class="lang-en">Match the images to win!</span>
+                <span class="lang-my">တူညီတဲ့ ပုံလေးတွေကို တွဲပေးနော်!</span>
+            </p>
+            <div class="game-grid" id="memoryGame">
+            </div>
+            <p id="gameMessage" style="margin-top: 15px; font-weight: bold; color: var(--primary); display:none;">
+                <span class="lang-en">You Won! 🎉 Your prize: A big kiss! 💋</span>
+                <span class="lang-my">နိုင်သွားပြီ! 🎉 ဆုကတော့ အနမ်းကြီးကြီးတစ်ပွင့်ပါ! 💋</span>
+            </p>
+        </div>
+
+        <div class="card">
+            <h2><i data-lucide="list-checks"></i> 
+                <span class="lang-en">Our Future Goals</span>
+                <span class="lang-my">တို့နှစ်ယောက်ရဲ့ အနာဂတ်</span>
+            </h2>
+            <p>
+                <span class="lang-en">Things I want to do with you</span>
+                <span class="lang-my">ဘေဘီနဲ့အတူတူ လုပ်ချင်တဲ့အရာလေးတွေ</span>
+            </p>
+            <div class="bucket-list">
+                <div class="bucket-item">
+                    <div class="bucket-check"><i data-lucide="plane"></i></div>
+                    <div>
+                        <span class="lang-en">Travel around the world</span>
+                        <span class="lang-my">ကမ္ဘာပတ်ပြီး ခရီးတွေထွက်မယ်</span>
+                    </div>
+                </div>
+                <div class="bucket-item">
+                    <div class="bucket-check"><i data-lucide="home"></i></div>
+                    <div>
+                        <span class="lang-en">Build a cozy home together</span>
+                        <span class="lang-my">အိမ်လေးတစ်လုံး အတူတူဆောက်မယ်</span>
+                    </div>
+                </div>
+                <div class="bucket-item">
+                    <div class="bucket-check"><i data-lucide="cat"></i></div>
+                    <div>
+                        <span class="lang-en">Adopt a cute pet</span>
+                        <span class="lang-my">ချစ်စရာ တိရစ္ဆာန်လေးတွေ မွေးမယ်</span>
+                    </div>
+                </div>
+                <div class="bucket-item">
+                    <div class="bucket-check"><i data-lucide="sunset"></i></div>
+                    <div>
+                        <span class="lang-en">Watch sunsets together</span>
+                        <span class="lang-my">နေဝင်ချိန်တွေကို အတူတူထိုင်ကြည့်မယ်</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="border: 2px solid var(--primary);">
+            <h2><i data-lucide="mail"></i> 
+                <span class="lang-en">My Promise</span>
+                <span class="lang-my">ကိုယ့်ရဲ့ ကတိ</span>
+            </h2>
+            <p>
+                <span class="lang-en">
+                    Baby Pwa Ceet,<br><br>
+                    You are the most precious person in my world. I promise to always make you smile, to support your dreams, and to love you more every single day.<br><br>
+                    You are my everything.
+                </span>
+                <span class="lang-my">
+                    Baby Pwa Ceet လေးရေ,<br><br>
+                    ဘေဘီက ကိုယ့်ကမ္ဘာကြီးမှာ တန်ဖိုးအရှိဆုံး လူသားလေးပါ။ ဘေဘီ့အမြဲပြုံးနေဖို့၊ အိပ်မက်တွေအကောင်အထည်ဖော်ဖို့ ကိုယ်အမြဲ ကူညီပေးမယ်လို့ ကတိပေးပါတယ်။ နေ့ရက်တိုင်းမှာ ဘေဘီ့ကို ပိုပိုပြီး ချစ်နေမှာပါ။<br><br>
+                    ဘေဘီ့က ကိုယ့်ရဲ့ အရာရာပါပဲကွာ။
+                </span>
+            </p>
+            <p style="text-align: right; font-weight: bold;">
+                <span class="lang-en">- Yours Always</span>
+                <span class="lang-my">- အမြဲတမ်း ဘေဘီ့အပိုင်</span>
+            </p>
+        </div>
+
+        <footer style="text-align: center; padding: 40px; opacity: 0.6; font-size: 0.8rem;">
+            Made with all my love for Hsu Yi Shoon Lae
+        </footer>
+
+    </main>
+
+    <!-- QUIZ MODAL -->
+    <div id="quizModal">
+        <div class="quiz-content">
+            <!-- Punishment Overlay -->
+            <div id="punishmentOverlay" class="punishment-overlay">
+                <img src="https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/paing's.gif" alt="Punishment">
+                <h3 style="color:var(--primary); margin-bottom:10px;">
+                    <span class="lang-en">Wrong Answer! 🥺</span>
+                    <span class="lang-my">အဖြေမှားနေတယ်! 🥺</span>
+                </h3>
+                <p>
+                    <span class="lang-en">Punishment: Kiss your phone screen now! 💋</span>
+                    <span class="lang-my">အပြစ်ပေးမယ် - ဖုန်း screen လေးကို အခုချက်ချင်း နမ်းလိုက်! 💋</span>
+                </p>
+                <button class="btn" style="margin-top:15px" onclick="hidePunishment()">
+                    <span class="lang-en">Okay, I did it!</span>
+                    <span class="lang-my">နမ်းပြီးပြီ!</span>
+                </button>
+            </div>
+
+            <!-- Step 1: Date Met -->
+            <div class="quiz-step active" id="q1">
+                <div style="font-size:3rem; margin-bottom:10px">🗓️</div>
+                <h3>
+                    <span class="lang-en">When did we first meet?</span>
+                    <span class="lang-my">တို့နှစ်ယောက် စတွေ့ခဲ့တဲ့နေ့?</span>
+                </h3>
+                <input type="text" id="inputDateMet" class="quiz-input" placeholder="e.g., Date Month Year">
+                <button class="btn" onclick="checkDateMet()">
+                    <span class="lang-en">Submit Answer</span>
+                    <span class="lang-my">အဖြေပို့မယ်</span>
+                </button>
+            </div>
+
+            <!-- Step 2: First Kiss -->
+            <div class="quiz-step" id="q2">
+                <div style="font-size:3rem; margin-bottom:10px">💏</div>
+                <h3>
+                    <span class="lang-en">When was our First Kiss?</span>
+                    <span class="lang-my">First Kiss ပေးခဲ့တဲ့နေ့လေး?</span>
+                </h3>
+                <input type="text" id="inputKissDate" class="quiz-input" placeholder="e.g., Date Month Year">
+                <button class="btn" onclick="checkKissDate()">
+                    <span class="lang-en">Submit Answer</span>
+                    <span class="lang-my">အဖြေပို့မယ်</span>
+                </button>
+            </div>
+
+            <!-- Step 3: Rating -->
+            <div class="quiz-step" id="q3">
+                <div style="font-size:3rem; margin-bottom:10px">💖</div>
+                <h3>
+                    <span class="lang-en">How much do you love me?</span>
+                    <span class="lang-my">ကိုယ့်ကို ဘယ်လောက်ချစ်လဲဟင်?</span>
+                </h3>
+                <p id="lowRatingMsg" style="color:var(--primary); font-weight:bold; display:none; margin:10px 0;">
+                    <span class="lang-en">Too low! Try again 🥺</span>
+                    <span class="lang-my">နည်းလွန်းတယ်ကွာ... ပြန်ရွေးနော် 🥺</span>
+                </p>
+                <div class="rating-grid">
+                    <button class="rate-btn" onclick="checkRating(1, this)">1</button>
+                    <button class="rate-btn" onclick="checkRating(2, this)">2</button>
+                    <button class="rate-btn" onclick="checkRating(3, this)">3</button>
+                    <button class="rate-btn" onclick="checkRating(4, this)">4</button>
+                    <button class="rate-btn" onclick="checkRating(5, this)">5</button>
+                    <button class="rate-btn" onclick="checkRating(6, this)">6</button>
+                    <button class="rate-btn" onclick="checkRating(7, this)">7</button>
+                    <button class="rate-btn" onclick="checkRating(8, this)">8</button>
+                    <button class="rate-btn" onclick="checkRating(9, this)">9</button>
+                    <button class="rate-btn" onclick="checkRating(10, this)">10</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONGRATULATIONS MODAL -->
+    <div id="congratsModal">
+        <div class="congrats-content">
+            <div style="font-size: 4rem; margin-bottom: 20px;">💘</div>
+            <h2 style="color: var(--primary); margin-bottom: 15px;">
+                <span class="lang-en">CONGRATULATIONS!</span>
+                <span class="lang-my">ဂုဏ်ယူပါတယ် ဘေဘီ! 🎉</span>
+            </h2>
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">
+                <span class="lang-en">You answered everything correctly! <br>You are officially my VALENTINE! ❤️</span>
+                <span class="lang-my">ဘေဘီအကုန်လုံးကို မှန်အောင်ဖြေနိုင်သွားပါပြီ!<br>ဘေဘီလေးကကိုကို့ရဲ့ တရားဝင် VALENTINE ဖြစ်သွားပါပြီ! ❤️</span>
+            </p>
+            <button class="btn" onclick="closeCongrats()">
+                <span class="lang-en">I Love You! 💋</span>
+                <span class="lang-my">ချစ်တယ်! 💋</span>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+
+        let currentLang = 'my'; 
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'en' ? 'my' : 'en';
+            updateLangDisplay();
+        }
+
+        function updateLangDisplay() {
+            const enElements = document.querySelectorAll('.lang-en');
+            const myElements = document.querySelectorAll('.lang-my');
+
+            if (currentLang === 'en') {
+                enElements.forEach(el => el.style.display = 'inline');
+                myElements.forEach(el => el.style.display = 'none');
+            } else {
+                enElements.forEach(el => el.style.display = 'none');
+                myElements.forEach(el => el.style.display = 'inline');
+            }
+        }
+
+        updateLangDisplay();
+
+
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const introScreen = document.getElementById('screen-intro');
+        const mainScreen = document.getElementById('screen-main');
+        
+        let noCount = 0;
+        
+        const noPhrases = {
+            en: [
+                "No", 
+                "Are you sure?", 
+                "Really sure?", 
+                "Think again!", 
+                "Last chance!", 
+                "Surely not?", 
+                "You might regret this!", 
+                "Give it another thought!", 
+                "Are you absolutely certain?", 
+                "This could be a mistake!", 
+                "Have a heart!", 
+                "Don't be so cold!", 
+                "Change of heart?", 
+                "Wouldn't you reconsider?", 
+                "Is that your final answer?", 
+                "You're breaking my heart ;("
+            ],
+            my: [
+                "ဟင့်အင်း", 
+                "သေချာလို့လား?", 
+                "တကယ်လားဟင်", 
+                "ပြန်စဉ်းစားပါဦး", 
+                "မလုပ်ပါနဲ့နော်", 
+                "ကိုယ့်ကို မချစ်ဘူးလား?", 
+                "စိတ်မကောင်းဖြစ်မိမယ်နော်", 
+                "ငိုလိုက်မှာနော်...", 
+                "တကယ်ပဲလား", 
+                "စိတ်ပြောင်းလိုက်ပါ", 
+                "နောက်ဆုံးအကြိမ်နော်", 
+                "နော်လို့...", 
+                "ချစ်တယ်လေ...", 
+                "ကျေးဇူးပြုပြီး...", 
+                "ပြန်စဉ်းစားပေးပါ...", 
+                "💔"
+            ]
+        };
+
+        function rejectLove() {
+            noCount++;
+            
+            const phrases = currentLang === 'en' ? noPhrases.en : noPhrases.my;
+            const enSpan = noBtn.querySelector('.lang-en');
+            const mySpan = noBtn.querySelector('.lang-my');
+            
+            enSpan.innerText = noPhrases.en[Math.min(noCount, noPhrases.en.length - 1)];
+            mySpan.innerText = noPhrases.my[Math.min(noCount, noPhrases.my.length - 1)];
+
+            const newSize = 1 + (noCount * 0.1); 
+            yesBtn.style.fontSize = `${newSize}rem`;
+            
+            const paddingV = 12 + noCount * 2;
+            const paddingH = 24 + noCount * 2;
+            yesBtn.style.padding = `${paddingV}px ${paddingH}px`;
+            
+            if (noCount > 14) { 
+                const finalEn = "YES 💖 (You have no choice!)";
+                const finalMy = "Yes! လက်ခံတယ် 💖 (ငြင်းလို့မရတော့ဘူးနော်)";
+                
+                yesBtn.querySelector('.lang-en').innerText = finalEn;
+                yesBtn.querySelector('.lang-my').innerText = finalMy;
+
+                yesBtn.style.maxWidth = "100vw"; 
+
+                yesBtn.style.position = "fixed";
+                yesBtn.style.top = "0";
+                yesBtn.style.left = "0";
+                yesBtn.style.width = "100vw";
+                yesBtn.style.height = "100vh";
+                yesBtn.style.zIndex = "9999";
+                yesBtn.style.borderRadius = "0";
+                
+                yesBtn.style.fontSize = "clamp(2rem, 8vw, 4rem)";
+                yesBtn.style.padding = "20px";
+                yesBtn.style.whiteSpace = "normal";
+                yesBtn.style.textAlign = "center";
+                yesBtn.style.display = "flex";
+                yesBtn.style.flexDirection = "column"; 
+                yesBtn.style.alignItems = "center";
+                yesBtn.style.justifyContent = "center";
+                
+                noBtn.style.display = 'none';
+                
+                const cat = document.querySelector('.pointing-cat');
+                if(cat) cat.style.display = 'none';
+            }
+        }
+
+        function acceptLove() {
+            confetti({
+                particleCount: 150,
+                spread: 70,
+                origin: { y: 0.6 },
+                colors: ['#e63946', '#ffccd5', '#ffffff']
+            });
+
+            introScreen.style.transition = 'opacity 1s';
+            introScreen.style.opacity = 0;
+            
+            setTimeout(() => {
+                introScreen.style.display = 'none';
+                mainScreen.style.display = 'block';
+                
+                requestAnimationFrame(() => {
+                    mainScreen.style.opacity = 1;
+                    mainScreen.style.transform = 'translateY(0)';
+                });
+                
+                initGame();
+
+                // START QUIZ TIMER - 10 SECONDS
+                setTimeout(startQuizSequence, 5000);
+
+            }, 1000);
+        }
+
+        // ================= HEART RAIN EFFECT =================
+        function createHeartRain(isMassive = false) {
+            const count = isMassive ? 60 : 20; 
+            const emojis = ['❤️', '💖', '💝', '💕', '💗'];
+            
+            for (let i = 0; i < count; i++) {
+                setTimeout(() => {
+                    const heart = document.createElement('div');
+                    heart.className = 'falling-heart';
+                    heart.innerHTML = emojis[Math.floor(Math.random() * emojis.length)];
+                    heart.style.left = Math.random() * 100 + 'vw';
+                    heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+                    heart.style.opacity = Math.random();
+                    heart.style.fontSize = (Math.random() * 1.5 + 1) + 'rem';
+                    
+                    document.body.appendChild(heart);
+                    
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 5000);
+                }, i * 100);
+            }
+        }
+
+        // ================= GAME LOGIC =================
+        const imagePairs = [
+            'https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/match1.jpg',
+            'https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/match2.jpg',
+            'https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/match3.jpg',
+            'https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/match4.jpg',
+            'https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/match1.jpg',
+            'https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/match2.jpg',
+            'https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/match3.jpg',
+            'https://cdn.jsdelivr.net/gh/flashchinchilla/forHsu@main/img/match4.jpg'
+        ];
+        
+        imagePairs.sort(() => 0.5 - Math.random());
+        
+        const gameGrid = document.getElementById('memoryGame');
+        let flippedCards = [];
+        let matchedPairs = 0;
+
+        function initGame() {
+            gameGrid.innerHTML = '';
+            imagePairs.forEach((imgUrl, index) => {
+                const card = document.createElement('div');
+                card.classList.add('game-card');
+                card.dataset.value = imgUrl; 
+                card.dataset.index = index;
+                
+                const cardFront = document.createElement('div');
+                cardFront.classList.add('card-front');
+                const img = document.createElement('img');
+                img.src = imgUrl;
+                cardFront.appendChild(img);
+
+                const cardBack = document.createElement('div');
+                cardBack.classList.add('card-back');
+                cardBack.innerHTML = '❓'; 
+
+                card.appendChild(cardFront);
+                card.appendChild(cardBack);
+
+                card.addEventListener('click', flipCard);
+                gameGrid.appendChild(card);
+            });
+        }
+
+        function flipCard() {
+            if (flippedCards.length < 2 && !this.classList.contains('flipped')) {
+                this.classList.add('flipped');
+                flippedCards.push(this);
+
+                if (flippedCards.length === 2) {
+                    setTimeout(checkMatch, 800);
+                }
+            }
+        }
+
+        function checkMatch() {
+            const [card1, card2] = flippedCards;
+            if (card1.dataset.value === card2.dataset.value) {
+                matchedPairs++;
+                if (matchedPairs === imagePairs.length / 2) {
+                    document.getElementById('gameMessage').style.display = 'block';
+                    confetti({ particleCount: 100, spread: 60, origin: { y: 0.8 } });
+                }
+            } else {
+                card1.classList.remove('flipped');
+                card2.classList.remove('flipped');
+            }
+            flippedCards = [];
+        }
+
+        // ================= QUIZ LOGIC =================
+        const quizModal = document.getElementById('quizModal');
+        const punishmentOverlay = document.getElementById('punishmentOverlay');
+        const congratsModal = document.getElementById('congratsModal');
+        
+        function startQuizSequence() {
+            quizModal.style.display = 'flex';
+        }
+
+        function normalizeInput(str) {
+            // Remove spaces, punctuation, convert to lowercase
+            return str.toLowerCase().replace(/[\s,\.\-]+/g, '');
+        }
+
+        function showPunishment() {
+            punishmentOverlay.style.display = 'flex';
+        }
+
+        function hidePunishment() {
+            punishmentOverlay.style.display = 'none';
+        }
+
+        function nextStep(currentId, nextId) {
+            document.getElementById(currentId).classList.remove('active');
+            document.getElementById(nextId).classList.add('active');
+        }
+
+        function triggerAnim(element, isCorrect) {
+            if (isCorrect) {
+                element.classList.add('success-pulse');
+            } else {
+                element.classList.add('shake');
+                setTimeout(() => {
+                    element.classList.remove('shake');
+                }, 500);
+            }
+        }
+
+        function checkDateMet() {
+            const input = document.getElementById('inputDateMet');
+            const normalized = normalizeInput(input.value);
+            // Correct: 7 October 2025, 07.10.2025
+            // Normalized target: 7october2025, 07102025
+            
+            const validAnswers = ['7october2025', '07102025', '7102025', 'october72025'];
+
+            if (validAnswers.includes(normalized)) {
+                triggerAnim(input, true);
+                setTimeout(() => {
+                    createHeartRain(); // New Mini Rain
+                    nextStep('q1', 'q2');
+                }, 600); 
+            } else {
+                triggerAnim(input, false);
+                setTimeout(showPunishment, 500);
+            }
+        }
+
+        function checkKissDate() {
+            const input = document.getElementById('inputKissDate');
+            const normalized = normalizeInput(input.value);
+            // Correct: 15 October 2025, 15.10.2025
+            // Normalized target: 15october2025, 15102025
+
+            const validAnswers = ['15october2025', '15102025', 'october152025'];
+
+            if (validAnswers.includes(normalized)) {
+                triggerAnim(input, true);
+                setTimeout(() => {
+                    createHeartRain(); // New Mini Rain
+                    nextStep('q2', 'q3');
+                }, 600);
+            } else {
+                triggerAnim(input, false);
+                setTimeout(showPunishment, 500);
+            }
+        }
+
+        function checkRating(score, btnElement) {
+            const msg = document.getElementById('lowRatingMsg');
+            
+            if (score < 8) {
+                triggerAnim(btnElement, false);
+                msg.style.display = 'block';
+                // Small shake effect for container too
+                const container = document.querySelector('.quiz-content');
+                container.style.transform = 'translateX(5px)';
+                setTimeout(() => container.style.transform = 'translateX(0)', 100);
+            } else {
+                triggerAnim(btnElement, true);
+                setTimeout(() => {
+                    confetti({ particleCount: 200, spread: 100, origin: { y: 0.5 } });
+                    quizModal.style.display = 'none';
+                    
+                    // Show Congratulations Modal instead of Alert
+                    congratsModal.style.display = 'flex';
+                    createHeartRain(true); // Massive Rain
+                }, 600);
+            }
+        }
+
+        function closeCongrats() {
+            congratsModal.style.display = 'none';
+        }
+
+    </script>
+</body>
+</html>
